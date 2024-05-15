@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+      
+    </style>
+</head>
+<body>
+    <div class="box"> 
+        Hello world
+    </div>
+    <button onclick="changeColors('black', 'white')">Simple</button>
+    <button onclick="changeColors('yellow', 'brown')">Old Style</button>
+    <button onclick="changeColors('pink', 'yellow')">Crazy Style</button>
+
+    <script>
+        function changeColors(textColor, backgroundColor) {
+            var box = document.querySelector(".box");
+            var body = document.body;
+
+            box.style.color = textColor;
+            body.style.backgroundColor = backgroundColor;
+            
+        }
+    </script>
+</body>
+</html>
